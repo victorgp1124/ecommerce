@@ -13,7 +13,7 @@ const ResetPass = () => {
                 <form action="" className="form">
                     <label for="password" className="label">Password</label>
                     <input type="password" id="password" placeholder="*********" className="input input-password"/>
-                    <label for="password" className="label">Password</label>
+                    <label for="password" className="label">New Password</label>
                     <input type="password" id="new-password" placeholder="*********" className="input input-password"/>
                     <input type="submit" value="confirm" className="primary-button login-button"/>
                 </form>  
