@@ -1,0 +1,71 @@
+@use 'vars';
+
+.my_account {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.title {
+    font-size: var(--lg);
+    margin-bottom: 32px;
+    text-align: start;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.value{
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+}
+.secondary-button {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--hospital-gerrn);
+    color: var(--hospital-gerrn);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+
+.login-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 640px) {
+    .title{
+        padding-top: 30px;
+    }
+    .form-container {
+        height: 100%;
+    }
+    .form {
+        padding-bottom: 30px;
+        justify-content: space-between;
+    } 
+}
