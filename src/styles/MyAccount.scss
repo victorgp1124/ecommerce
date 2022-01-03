@@ -1,41 +1,41 @@
 @use 'vars';
 
-.my_account {
+.my_account-my_account {
     width: 100%;
     height: 100vh;
     display: grid;
     place-items: center;
 }
 
-.form-container {
+.form-container-my_account {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
 }
 
-.title {
+.title-my_account {
     font-size: var(--lg);
     margin-bottom: 32px;
     text-align: start;
 }
 
-.form {
+.form-my_account {
     display: flex;
     flex-direction: column;
 }
 
-.div-label {
+.div-label-my_account {
     display: flex;
     flex-direction: column;
 }
 
-.label {
+.label-my_account {
     font-size: var(--sm);
     font-weight: bold;
     margin-bottom: 4px;
 }
 
-.input {
+.input-my_account {
     background-color: var(--text-input-field);
     border: none;
     border-radius: 8px;
@@ -45,8 +45,8 @@
     margin-bottom: 28px;
 }
 
-.primary-button {
-    background-color: var(--hospital-gerrn);
+.primary-button-my_account {
+    background-color: var(--hospital-green);
     border-radius: 8px;
     border: none;
     color: var(--white);
@@ -57,19 +57,19 @@
     height: 50px;
 }
 
-.login-button {
+.login-button-my_account {
     margin-top: 14px;
     margin-bottom: 30px;
 }
 
 @media (max-width: 640px) {
-    .title{
+    .title-my_account{
         padding-top: 30px;
     }
-    .form-container {
+    .form-container-my_account {
         height: 100%;
     }
-    .form {
+    .form-my_account {
         padding-bottom: 30px;
         justify-content: space-between;
     } 

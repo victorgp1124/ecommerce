@@ -1,25 +1,25 @@
 @use 'vars';
 
-.mobile-menu {
+.mobile-menu-mobile_menu {
     padding: 30px 50px 30px 50px;
 }
 
-.mobile-menu ul{    
+.mobile-menu-mobile_menu ul{    
     margin: 24px 0 0;
     list-style: none;
 }  
 
-.mobile-menu ul li{    
+.mobile-menu-mobile_menu ul li{    
     margin-bottom: 24px;
 
 }  
 
-.mobile-menu ul:nth-child(1){    
+.mobile-menu-mobile_menu ul:nth-child(1){    
     border-bottom: 1px solid var(--very-light-pink);
 
 }  
 
-.mobile-menu ul li a{    
+.mobile-menu-mobile_menu ul li a{    
     color: var(--black);
     text-decoration: none;
     font-size: var(--sm);
@@ -28,17 +28,17 @@
     font-weight: bold;
 } 
 
-.email {
+.email-mobile_menu {
     font-size: var(--sm);
     font-weight: 300;
 }
 
-.sing-out {
+.sing-out-mobile_menu {
     color: var(--hospital-gerrn)!important;
     font-size: var(--sm);
 }
 
-.mobile-menu ul:nth-child(3) {
+.mobile-menu-mobile_menu ul:nth-child(3) {
     position: absolute;
     bottom: 0;
 }

@@ -7,24 +7,24 @@ nav {
     border-bottom: 1px solid var(--very-light-pink);
 }
 
-.menu {
+.menu-header {
     display: none;
 }
 
-.logo {
+.logo-header {
     width: 100px;
 }
 
-.navbar-left {
+.navbar-left-header {
     display: flex;
 }
 
-.navbar-left ul{
+.navbar-left-header ul{
     margin-left: 12px;
 }
 
-.navbar-left ul li a,
-.navbar-right ul li a{
+.navbar-left-header ul li a,
+.navbar-right-header ul li a{
     text-decoration: none;
     color: var(--very-light-pink);
     border: 1px solid var(--white);
@@ -32,15 +32,15 @@ nav {
     border-radius: 8px;
 }
 
-.navbar-left ul li a:hover,
-.navbar-right ul li a:hover{
+.navbar-left-header ul li a:hover,
+.navbar-right-header ul li a:hover{
     text-decoration: none;
     color: var(--hospital-gerrn);
-    border: 1px solid var(--hospital-gerrn);  
+    border: 1px solid var(--hospital-green);  
 }
 
-.navbar-left ul,
-.navbar-right ul {
+.navbar-left-header ul,
+.navbar-right-header ul {
     list-style: none;
     margin-top: 24px;
     display: flex;
@@ -49,20 +49,20 @@ nav {
     height: 60px;
 }
 
-.navbar-email {
+.navbar-email-header {
     color: var(--very-light-pink);
     font-size: var(--sm);
     margin-right: 12px;
 }
 
-.navbar-shopping-cart {
+.navbar-shopping-cart-header {
     position: relative;
 }
 
-.navbar-shopping-cart div{
+.navbar-shopping-cart-header div{
     width: 16px;
     height: 16px;
-    background-color: var(--hospital-gerrn);
+    background-color: var(--hospital-green);
     border-radius: 50%;
     font-size: var(--sm);
     font-weight: bold;
@@ -75,15 +75,15 @@ nav {
 }
 
 @media (max-width: 640px) {
-    .menu {
+    .menu-header {
         display: block;
     }
 
-    .navbar-left ul{
+    .navbar-left-header ul{
         display: none;
     }
 
-    .navbar-email {
+    .navbar-email-header {
         display: none;
     }
 }

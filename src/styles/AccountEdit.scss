@@ -1,50 +1,50 @@
 @use 'vars';
 
-.my_account {
+.my_account-account_edit {
     width: 100%;
     height: 100vh;
     display: grid;
     place-items: center;
 }
 
-.form-container {
+.form-container-account_edit {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
 }
 
-.title {
+.title-account_edit {
     font-size: var(--lg);
     margin-bottom: 32px;
     text-align: start;
 }
 
-.form {
+.form-account_edit {
     display: flex;
     flex-direction: column;
 }
 
-.div-label {
+.div-label-account_edit {
     display: flex;
     flex-direction: column;
 }
 
-.label {
+.label-account_edit {
     font-size: var(--sm);
     font-weight: bold;
     margin-bottom: 4px;
 }
 
-.value{
+.value-account_edit{
     color: var(--very-light-pink);
     font-size: var(--md);
     margin: 8px 0 32px 0;
 }
-.secondary-button {
+.secondary-button-account_edit {
     background-color: var(--white);
     border-radius: 8px;
-    border: 1px solid var(--hospital-gerrn);
-    color: var(--hospital-gerrn);
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
     width: 100%;
     cursor: pointer;
     font-size: var(--md);
@@ -52,19 +52,19 @@
     height: 50px;
 }
 
-.login-button {
+.login-button-account_edit {
     margin-top: 14px;
     margin-bottom: 30px;
 }
 
 @media (max-width: 640px) {
-    .title{
+    .title-account_edit{
         padding-top: 30px;
     }
-    .form-container {
+    .form-container-account_edit {
         height: 100%;
     }
-    .form {
+    .form-account_edit {
         padding-bottom: 30px;
         justify-content: space-between;
     } 

@@ -1,19 +1,13 @@
 @use 'vars';
 
-.product-detail {
+.product-detail-details {
     width: 360px;
     padding-bottom: 24px;
     position: absolute;
     right: 0;
 }
 
-.product-detail-close img{
-    position: absolute;
-    top: 12px;
-    left: 12px;
-}
-
-.product-detail-close {
+.product-detail-close-details {
     background-color: var(--white);
     width: 14px;
     height: 14px;
@@ -25,89 +19,26 @@
     border-radius: 50px;
 }
 
-.product-detail-close {
+.product-detail-close-details {
     cursor: pointer;
 }
 
-.product-detail > img:nth-child(2){
+.product-detail-details > img:nth-child(2){
     width: 360px;
     height: 360px;
     object-fit: cover;
     border-radius: 0 0 20px 20px;    
 }
 
-.points {
-    display: flex;
-    justify-content: center;
-}
-
-.points > li {
-    background: var(--very-light-pink);
-    width: 8px;
-    height: 8px;
-    margin: 8px 6px;
-    border-radius: 50%;
-    list-style-type: none;
-    cursor: pointer;
-}
-  
-.points > .active {
-    background-color: var(--hospital-gerrn);
-}
-  
-.points > li:hover {
-    background-color: var(--hospital-gerrn);
-}
-
-.product-info {
-    margin: 24px 24px 0 24px;   
-}
-
-.product-info p:nth-child(1) {
-    font-weight: bold;
-    font-size: var(--md);
-    margin-bottom: 4px;
-}
-
-.product-info p:nth-child(2) {
-    color: var(--very-light-pink);
-    font-size: var(--md);
-    margin-bottom: 36px;
-}
-
-.product-info p:nth-child(3) {
-    color: var(--very-light-pink);
-    font-size: var(--sm);
-    margin-bottom: 36px;
-}
-
-.primary-button {
-    background-color: var(--hospital-gerrn);
-    border-radius: 8px;
-    border: none;
-    color: var(--white);
-    width: 100%;
-    cursor: pointer;
-    font-size: var(--md);
-    font-weight: bold;
-    height: 50px;
-}
-
-.add-to-cart-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-
 @media (max-width: 640px) {
-    .product-detail {
+    .product-detail-details {
         width: 100%;
     }
-    .product-detail > img:nth-child(2){
+    .product-detail-details > img:nth-child(2){
         width: 100%;
    
     }
-    .product-info {
+    .product-info-details {
         height: 50vh;
         display: flex;
         flex-direction: column;
