@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/Cart.scss';
-import arrow from '../assets/icons/flechita.svg';
-import OrderItem from '../components/OrderItem';
-import Order from '../components/Order';
+import '@styles/Cart.scss';
+import arrow from '@icons/flechita.svg';
+import OrderItem from '@components/OrderItem';
+import Order from '@components/Order';
 
 const Cart = () => {
     return ( 

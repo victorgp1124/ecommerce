@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/AccountEdit.scss';
+import '@styles/AccountEdit.scss';
 
 const AccountEdit = () => {
     return ( 

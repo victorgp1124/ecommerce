@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from '../components/Header';
+import Principal from '@containers/Principal';
 
 const Home = () => {
     return (
-        <Header/>
+        <Principal/>
     );
 }
 

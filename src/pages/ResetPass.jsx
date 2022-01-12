@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/ResetPass.scss';
-import logo from '../assets/logos/logo_yard_sale.svg';
+import '@styles/ResetPass.scss';
+import logo from '@logos/logo_yard_sale.svg';
 
 
 const ResetPass = () => {
