@@ -5,6 +5,9 @@ nav {
     justify-content: space-between;
     padding: 0 24px;
     border-bottom: 1px solid var(--very-light-pink);
+    background-color: var(--white);
+    position: sticky;
+    top: 0;
 }
 
 .menu-header {
@@ -35,7 +38,7 @@ nav {
 .navbar-left-header ul li a:hover,
 .navbar-right-header ul li a:hover{
     text-decoration: none;
-    color: var(--hospital-gerrn);
+    color: var(--hospital-green);
     border: 1px solid var(--hospital-green);  
 }
 

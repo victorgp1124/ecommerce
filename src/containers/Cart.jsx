@@ -5,7 +5,7 @@ import AppContext from '@context/AppContext';
 import OrderItem from '@components/OrderItem';
 
 const Cart = () => {
-    const { state } = useContext(AppContext);
+    const { state, toggleOrder } = useContext(AppContext);
 
     const sumTotal = () => {
         const reducer = (accumulator, currentValue) => accumulator + currentValue.price;
@@ -16,7 +16,7 @@ const Cart = () => {
         <aside className="my-order-cart">
             <div className="my-order-container-cart">
                 <div className="title-container-cart">
-                    <img src={arrow} alt="arrow"/>
+                    <img src={arrow} alt="arrow" onClick={()=> toggleOrder()}/>
                     <p className="title-cart">My order</p>
                 </div>
                 <div className="my-order-content-cart">
