@@ -37,12 +37,20 @@ const useInitialState = () => {
         });
       };
 
+      const toggleMenu2 = () => {
+        setState({
+          ...state,
+          menuIsOpen: !state.menuIsOpen,
+        });
+      };
+
     return {
         state,
         addToCart,
         removeFromCart,
         toggleOrder,
-        toggleMenu
+        toggleMenu,
+        toggleMenu2
     }
 }
 

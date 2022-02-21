@@ -6,18 +6,23 @@ import Cart from '@containers/Cart';
 import Menu from '@components/Menu';
 import AppContext from '@context/AppContext';
 import cart from '@icons/icon_shopping_cart.svg';
+import MobileMenu from '../containers/MobileMenu';
 
 const Header = () => { 
-    const [toggle, setToggle] = useState(false);
+    const [toggle,setToggle] = useState(false);
+    const [toggle2,setToggle2] = useState(false);
     const [toggleOrder, setToggleOrders] = useState(false);
     const { state } = useContext(AppContext);
 
     const hadleToggle = () => {
         setToggle(!toggle);
     }
+    const hadleToggle2 = () => {
+        setToggle2(!toggle2);
+    }
     return (
         <nav>
-            <img src={menu} alt="menu" className="menu-header"/>
+            <img src={menu} alt="menu" className="menu-header" onClick={hadleToggle2}/>
             <div className="navbar-left-header">
                 <img src={logo} alt="logo" className="logo-header"/>
                 <ul>
@@ -54,6 +59,7 @@ const Header = () => {
             </div>
             {toggle && <Menu/>}
             {toggleOrder && <Cart/>}
+            {toggle2 && <MobileMenu/>}
         </nav>
     );
 }
